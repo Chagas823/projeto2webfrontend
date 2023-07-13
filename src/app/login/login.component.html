@@ -1,0 +1,11 @@
+<div class="login">
+    <h2>Login</h2>
+<a style="color: red;">{{loginFailMessage}}</a>
+<label for="">login</label>
+ <input [(ngModel)]="username" type="text" />
+<label for="">Senha</label>
+ <input [(ngModel)]="password" type="password"/>
+
+<button (click)="login()">Login</button>
+<a routerLink="/cadastrar">cadastrar</a>
+</div>

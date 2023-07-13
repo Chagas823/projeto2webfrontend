@@ -1,0 +1,28 @@
+<div style="display: grid;grid-template-columns: 170px 400px;justify-content: center;">
+    <div class="conversa" style="margin-right: 10px;">
+        <img src="{{usuario.foto}}" alt="">
+        <p>Nome: {{usuario.nome}}</p>
+    </div>
+    <div>
+        <div class="border" style="">
+            <p style="margin-right: 20px;">Mensagem</p>
+            <div class="inputGroup" style="margin-right: 10px;">
+                <input type="text" required="" autocomplete="off" placeholder="mensagem" [(ngModel)]="msg.mensagem" (keydown.enter)="adicionarMensagem()">
+            </div>
+            <img src="assets/send-button.png" alt="" style="width: 20px;height: 20px;position: absolute;left: 945px;cursor: pointer;" (click)="adicionarMensagem()"  >
+        </div>
+        <div style="display: grid; grid-template-columns: auto auto auto;justify-content: space-between;">
+            <p>Mensagem</p>
+            <p>Data</p>
+            <p>De quem?</p>
+            
+        </div>
+        <div *ngFor="let mensagem of mensagens" style="display: grid; grid-template-columns: auto auto auto ;justify-content: space-between;">
+                
+            <p>{{mensagem.mensagem}}</p>
+            <p>{{mensagem.dataString}}</p>
+            <p>{{mensagem.emissor.nome}}</p>
+        
+    </div>
+    </div>
+</div>

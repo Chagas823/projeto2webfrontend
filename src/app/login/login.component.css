@@ -1,0 +1,56 @@
+
+div {
+    box-sizing: border-box;
+    font-family: Apple Chancery, cursive;
+  }
+.login{
+    display: grid;
+    grid-template-columns: 100px 200px ;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    grid-column: 1/2;
+}
+input,
+button {
+    grid-column: 1 / 3;
+}
+button{
+   
+
+    margin-top: 10px;
+    margin-left: 110px;
+    appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+input{
+    padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+input:focus{
+    border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

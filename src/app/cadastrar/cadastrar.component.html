@@ -1,0 +1,17 @@
+<div class="cadastrar">
+    <h2>cadastrar</h2>
+<p style="color: red;"  >{{erroMsg}}</p>
+<label for="">nome</label>
+ <input [(ngModel)]="usuario.nome"   type="text" />
+<label for="">email</label>
+ <input [(ngModel)]="usuario.email"   type="email" />
+ <label for="">Foto</label>
+ <input [(ngModel)]="usuario.foto"  type="text"/>
+ <label for="">Senha</label>
+  <input [(ngModel)]="usuario.senha"  type="password"/>
+  <label for="" >Confirmar Senha</label>
+  <input  type="password" [(ngModel)]="senha" />
+<button (click)="cadastrar()">cadastrar</button>
+<a routerLink="/login">login</a>
+</div>
+
